@@ -16,9 +16,9 @@ module.exports = async function HomeSignUpPostController(req, res) {
       password: await generateCrypt(data.password),
     });
 
-    res.redirect("/login.html");
+    res.redirect("/");
   } catch (error) {
-    res.render("register", {
+    res.render("registration", {
       error,
     });
   }

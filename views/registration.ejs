@@ -11,13 +11,14 @@
     </div>
   </nav>
   <section class="registration">
-    
+    <%var error%>
       <div class="container">
-          <form action="" class="form-floating w-50 mx-auto my-5">
-                <input class="w-100 p-3 my-5"  type="text" placeholder="Your name"> 
-                <input class="w-100 p-3"  type="email" placeholder="Email adress">
-                <input class="w-100 p-3 my-5"  type="password" placeholder="Password">
-                <button type="button" class="btn btn-outline-success w-100">Add</button>
+          <form method="POST" action="" class="form-floating w-50 mx-auto my-5">
+              <%= error%>
+                <input name="name" class="w-100 p-3 my-5"  type="text" placeholder="Your name"> 
+                <input name="email" class="w-100 p-3"  type="email" placeholder="Email adress">
+                <input name="password" class="w-100 p-3 my-5"  type="password" placeholder="Password">
+                <button type="submit" class="btn btn-outline-success w-100">Add</button>
           </form>
       
       </div>
